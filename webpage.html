@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Webpage</title>
+    <style>
+        /* Reset and body styles */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            overflow: hidden;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            z-index: 1;
+        }
+
+        /* Animated background lines */
+        body::before {
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(120deg, #ff6ec4, #7873f5, #4ade80, #facc15);
+            background-size: 400% 400%;
+            animation: moveBg 15s ease infinite;
+            z-index: -1;
+        }
+
+        @keyframes moveBg {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        /* Navigation links */
+        a {
+            text-decoration: none;
+            color: white;
+            margin-right: 20px;
+            font-weight: bold;
+            font-size: 18px;
+        }
+
+        a:visited {
+            color: lightgreen;
+        }
+
+        /* Container to center form */
+        .container {
+            text-align: center;
+        }
+
+        /* Form styling */
+        form {
+            background-color: rgba(255, 255, 255, 0.2);
+            backdrop-filter: blur(10px);
+            border-radius: 15px;
+            padding: 30px;
+            max-width: 500px;
+            margin: 0 auto;
+            color: #fff;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+        }
+
+        label {
+            font-weight: bold;
+            display: block;
+            margin-top: 15px;
+            text-align: left;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="password"],
+        select {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border: none;
+            border-radius: 5px;
+            margin-bottom: 15px;
+        }
+
+        button {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            margin-right: 10px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        button[type="submit"] {
+            background-color: #4ade80;
+            color: black;
+        }
+
+        button[type="reset"] {
+            background-color: #f87171;
+            color: black;
+        }
+
+        hr {
+            border: 1px solid white;
+            margin: 20px 0;
+        }
+label .required {
+    color: red;
+    margin-left: 5px;
+}
+a.active {
+    animation: blink 2s infinite;
+    color: red !important;
+    font-weight: bold;
+}
+
+@keyframes blink {
+    0%, 49% {
+        color: red;
+    }
+    50%, 100% {
+        color: white;
+    }
+}
+
+   </style>
+
+</head>
+<body>
+
+<div class="container">
+    <a href="file:///C:/Users/harik/Desktop/webpage/webpage.html" class="active">Login</a>
+<a href="file.html">MyFile</a>
+<a href="#">Subject</a>
+<a href="#">Links</a>
+<a href="#">Help</a>
+
+
+    <hr>
+
+    <form >
+<label>First name:<span class="required">*</span></label>
+<input type="text" name="firstname" id="firstname" required>
+
+<label>Last name:<span class="required">*</span></label>
+<input type="text" name="lastname" id="lastname" required>
+
+<label>Where do you live in?<span class="required">*</span></label>
+<select name="country" id="country" required>
+   
+           <option value="Afghanistan">Afghanistan
+<option value="Albania">Albania
+<option value="Algeria">Algeria
+<option value="Andorra">Andorra
+<option value="Angola">Angola
+<option value="Antigua and Barbuda">Antigua and Barbuda
+<option value="Argentina">Argentina
+<option value="Armenia">Armenia
+<option value="Australia">Australia
+<option value="Austria">Austria
+<option value="Azerbaijan">Azerbaijan
+<option value="Bahamas">Bahamas
+<option value="Bahrain">Bahrain
+<option value="Bangladesh">Bangladesh
+<option value="Barbados">Barbados
+<option value="Belarus">Belarus
+<option value="Belgium">Belgium
+<option value="Belize">Belize
+<option value="Benin">Benin
+<option value="Bhutan">Bhutan
+<option value="Bolivia">Bolivia
+<option value="Bosnia and Herzegovina">Bosnia and Herzegovina
+<option value="Botswana">Botswana
+<option value="Brazil">Brazil
+<option value="Brunei">Brunei
+<option value="Bulgaria">Bulgaria
+<option value="Burkina Faso">Burkina Faso
+<option value="Burundi">Burundi
+<option value="Cabo Verde">Cabo Verde
+<option value="Cambodia">Cambodia
+<option value="Cameroon">Cameroon
+<option value="Canada">Canada
+<option value="Central African Republic">Central African Republic
+<option value="Chad">Chad
+<option value="Chile">Chile
+<option value="China">China
+<option value="Colombia">Colombia
+<option value="Comoros">Comoros
+<option value="Congo (Congo-Brazzaville)">Congo (Congo-Brazzaville)
+<option value="Costa Rica">Costa Rica
+<option value="Croatia">Croatia
+<option value="Cuba">Cuba
+<option value="Cyprus">Cyprus
+<option value="Czech Republic (Czechia)">Czech Republic (Czechia)
+<option value="Democratic Republic of the Congo">Democratic Republic of the Congo
+<option value="Denmark">Denmark
+<option value="Djibouti">Djibouti
+<option value="Dominica">Dominica
+<option value="Dominican Republic">Dominican Republic
+<option value="Ecuador">Ecuador
+<option value="Egypt">Egypt
+<option value="El Salvador">El Salvador
+<option value="Equatorial Guinea">Equatorial Guinea
+<option value="Eritrea">Eritrea
+<option value="Estonia">Estonia
+<option value="Eswatini (fmr. Swaziland)">Eswatini (fmr. Swaziland)
+<option value="Ethiopia">Ethiopia
+<option value="Fiji">Fiji
+<option value="Finland">Finland
+<option value="France">France
+<option value="Gabon">Gabon
+<option value="Gambia">Gambia
+<option value="Georgia">Georgia
+<option value="Germany">Germany
+<option value="Ghana">Ghana
+<option value="Greece">Greece
+<option value="Grenada">Grenada
+<option value="Guatemala">Guatemala
+<option value="Guinea">Guinea
+<option value="Guinea-Bissau">Guinea-Bissau
+<option value="Guyana">Guyana
+<option value="Haiti">Haiti
+<option value="Honduras">Honduras
+<option value="Hungary">Hungary
+<option value="Iceland">Iceland
+<option value="India">India
+<option value="Indonesia">Indonesia
+<option value="Iran">Iran
+<option value="Iraq">Iraq
+<option value="Ireland">Ireland
+<option value="Israel">Israel
+<option value="Italy">Italy
+<option value="Ivory Coast">Ivory Coast
+<option value="Jamaica">Jamaica
+<option value="Japan">Japan
+<option value="Jordan">Jordan
+<option value="Kazakhstan">Kazakhstan
+<option value="Kenya">Kenya
+<option value="Kiribati">Kiribati
+<option value="Kuwait">Kuwait
+<option value="Kyrgyzstan">Kyrgyzstan
+<option value="Laos">Laos
+<option value="Latvia">Latvia
+<option value="Lebanon">Lebanon
+<option value="Lesotho">Lesotho
+<option value="Liberia">Liberia
+<option value="Libya">Libya
+<option value="Liechtenstein">Liechtenstein
+<option value="Lithuania">Lithuania
+<option value="Luxembourg">Luxembourg
+<option value="Madagascar">Madagascar
+<option value="Malawi">Malawi
+<option value="Malaysia">Malaysia
+<option value="Maldives">Maldives
+<option value="Mali">Mali
+<option value="Malta">Malta
+<option value="Marshall Islands">Marshall Islands
+<option value="Mauritania">Mauritania
+<option value="Mauritius">Mauritius
+<option value="Mexico">Mexico
+<option value="Micronesia">Micronesia
+<option value="Moldova">Moldova
+<option value="Monaco">Monaco
+<option value="Mongolia">Mongolia
+<option value="Montenegro">Montenegro
+<option value="Morocco">Morocco
+<option value="Mozambique">Mozambique
+<option value="Myanmar (Burma)">Myanmar (Burma)
+<option value="Namibia">Namibia
+<option value="Nauru">Nauru
+<option value="Nepal">Nepal
+<option value="Netherlands">Netherlands
+<option value="New Zealand">New Zealand
+<option value="Nicaragua">Nicaragua
+<option value="Niger">Niger
+<option value="Nigeria">Nigeria
+<option value="North Korea">North Korea
+<option value="North Macedonia">North Macedonia
+<option value="Norway">Norway
+<option value="Oman">Oman
+<option value="Pakistan">Pakistan
+<option value="Palau">Palau
+<option value="Palestine State">Palestine State
+<option value="Panama">Panama
+<option value="Papua New Guinea">Papua New Guinea
+<option value="Paraguay">Paraguay
+<option value="Peru">Peru
+<option value="Philippines">Philippines
+<option value="Poland">Poland
+<option value="Portugal">Portugal
+<option value="Qatar">Qatar
+<option value="Romania">Romania
+<option value="Russia">Russia
+<option value="Rwanda">Rwanda
+<option value="Saint Kitts and Nevis">Saint Kitts and Nevis
+<option value="Saint Lucia">Saint Lucia
+<option value="Saint Vincent and the Grenadines">Saint Vincent and the Grenadines
+<option value="Samoa">Samoa
+<option value="San Marino">San Marino
+<option value="Sao Tome and Principe">Sao Tome and Principe
+<option value="Saudi Arabia">Saudi Arabia
+<option value="Senegal">Senegal
+<option value="Serbia">Serbia
+<option value="Seychelles">Seychelles
+<option value="Sierra Leone">Sierra Leone
+<option value="Singapore">Singapore
+<option value="Slovakia">Slovakia
+<option value="Slovenia">Slovenia
+<option value="Solomon Islands">Solomon Islands
+<option value="Somalia">Somalia
+<option value="South Africa">South Africa
+<option value="South Korea">South Korea
+<option value="South Sudan">South Sudan
+<option value="Spain">Spain
+<option value="Sri Lanka">Sri Lanka
+<option value="Sudan">Sudan
+<option value="Suriname">Suriname
+<option value="Sweden">Sweden
+<option value="Switzerland">Switzerland
+<option value="Syria">Syria
+<option value="Tajikistan">Tajikistan
+<option value="Tanzania">Tanzania
+<option value="Thailand">Thailand
+<option value="Timor-Leste">Timor-Leste
+<option value="Togo">Togo
+<option value="Tonga">Tonga
+<option value="Trinidad and Tobago">Trinidad and Tobago
+<option value="Tunisia">Tunisia
+<option value="Turkey">Turkey
+<option value="Turkmenistan">Turkmenistan
+<option value="Tuvalu">Tuvalu
+<option value="Uganda">Uganda
+<option value="Ukraine">Ukraine
+<option value="United Arab Emirates">United Arab Emirates
+<option value="United Kingdom">United Kingdom
+<option value="United States">United States
+<option value="Uruguay">Uruguay
+<option value="Uzbekistan">Uzbekistan
+<option value="Vanuatu">Vanuatu
+<option value="Vatican City">Vatican City
+<option value="Venezuela">Venezuela
+<option value="Vietnam">Vietnam
+<option value="Yemen">Yemen
+<option value="Zambia">Zambia
+<option value="Zimbabwe">Zimbabwe
+</select>
+
+<label>Password:<span class="required">*</span></label>
+<input type="password" name="password" id="password" required>
+
+        <label>Email:</label>
+        <input type="email" name="email">
+
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+    </form>
+</div>
+<script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbyl4-4EhbEr0ylk224oFNz3o0MQaTzNurMswyvNJ9mdp8Z9rbrTlmFUYjVBwN3sDvXzKw/exec';
+  const form = document.querySelector('form');
+
+  form.addEventListener('submit', e => {
+    e.preventDefault();
+
+    const requiredFields = ['firstname', 'lastname', 'country', 'password'];
+    let missing = [];
+
+    requiredFields.forEach(name => {
+      const el = document.getElementsByName(name)[0];
+      if (!el.value.trim()) missing.push(name);
+    });
+
+    if (missing.length > 0) {
+      alert("Please fill in: " + missing.join(', '));
+      return;
+    }
+
+    fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+      .then(response => response.json())
+      .then(data => {
+        if (data.result === 'success') {
+          alert("Form submitted successfully!");
+          form.reset();
+        } else {
+          alert("Error submitting form.");
+        }
+      })
+      .catch(error => {
+        alert("Submission failed: " + error);
+      });
+  });
+</script>
+
+</body>
+</html>
